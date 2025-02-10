@@ -14,7 +14,7 @@ const CompaniesTrustUs = () => {
           Companies we worked with
         </label>
       </div>
-        <div className="flex justify-center items-center lg:flex-row flex-col gap-6 w-full max-w-6xl text-center">
+        <div className="flex justify-center items-center lg:flex-row flex-col gap-6 w-80 max-w-6xl text-center">
           <div className="flex flex-row justify-center items-center">
             <div className="flex flex-col items-center">
               <div className="p-4 rounded-full w-50">
