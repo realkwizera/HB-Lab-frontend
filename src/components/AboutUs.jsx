@@ -1,9 +1,12 @@
 import React from "react";
-import kids from '../assets/kids.jpg'
+import { useState } from "react";
+import kids from "../assets/kids.jpg";
+import { FiX } from "react-icons/fi";
 
 const AboutUs = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
-    <div className="flex items-center justify-center mx-auto w-full text-green-900">
+    <div className="flex font-Poppins items-center justify-center mx-auto w-full text-green-900">
       <div className="flex flex-col items-center gap-5 max-w-screen-xl mx-auto px-5">
         <div>
           <label className="font-bold text-4xl p-4">About Us</label>
@@ -19,18 +22,45 @@ const AboutUs = () => {
           </div>
 
           <div className="flex flex-col py-10 rounded-lg h-full w-full text-center">
-            <p className="font-small lg:text-start text-center leading-relaxed lg:w-full  text-xl h-full flex items-center">
-              HBLab Ltd is a leading digital solutions provider specializing in
-              website design, development, and digital transformation. We offer
-              a range of services, including responsive web development, mobile
-              web development, eCommerce solutions, content management systems,
-              web application security, and UI/UX design. Beyond development, we
-              are committed to nurturing the next generation of tech
-              professionals through comprehensive training programs and hands-on
-              internships. Our goal is to equip individuals with practical
-              skills and real-world experience, empowering them to excel in the
-              digital industry.
-            </p>
+            {!showMore && (
+              <>
+                <p className="font-small lg:text-start text-center leading-relaxed lg:w-full  text-xl h-full flex items-center">
+                  HBLab Ltd is a leading digital solutions provider specializing
+                  in website design, development, and digital transformation. We
+                  offer a range of services, including responsive web
+                  development, mobile web development, eCommerce solutions,
+                  content management systems, web application security, and
+                  UI/UX design.
+                </p>
+
+                <button
+                  onClick={() => setShowMore(true)}
+                  className="mt-4 px-4 py-2 bg-green-900 text-white rounded-lg hover:text-green-900 hover:bg-white"
+                >
+                  Read More
+                </button>
+              </>
+            )}
+            {showMore && (
+              <p className="mt-4 flex flex-col font-small lg:text-start text-center leading-relaxed lg:w-full text-xl h-full flex items-center">
+                HBLab Ltd is a leading digital solutions provider specializing
+                in website design, development, and digital transformation. We
+                offer a range of services, including responsive web development,
+                mobile web development, eCommerce solutions, content management
+                systems, web application security, and UI/UX design. Beyond
+                development, we are committed to nurturing the next generation
+                of tech professionals through comprehensive training programs
+                and hands-on internships. Our goal is to equip individuals with
+                practical skills and real-world experience, empowering them to
+                excel in the digital industry.
+                <button
+                  onClick={() => setShowMore(false)}
+                  className="mt-4 px-4 py-2 bg-green-900 text-white rounded-lg hover:text-green-900 hover:bg-white"
+                >
+                  <FiX />
+                </button>
+              </p>
+            )}
           </div>
         </div>
         <div>

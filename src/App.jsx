@@ -6,7 +6,7 @@ import Draft from './components/Footer'
 
 const App = () => {
   return (
-    <div className="font-Poppins bg-Solitude">
+    <div className="font-Poppins bg-Solitude text-sm">
       <Router>
         <Routes>
           <Route path='/' element={<LandingSection/>}/>

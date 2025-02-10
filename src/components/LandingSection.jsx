@@ -87,7 +87,7 @@ const LandingSection = () => {
     </div>
       </div>
 
-      <section className="overflow-hidden">
+      <section className="overflow-hidden ">
         <HeroSection />
       </section>
 

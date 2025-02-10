@@ -19,7 +19,7 @@ const HeroSection = () => {
           Gain hands-on experience in Software Development, Multimedia,
           Networking, and Computer Systems with HBLab Ltd.
         </p>
-        <button className="mt-4 py-3 px-5 bg-transparent border-2 rounded border-white text-gray-50 text-sm">
+        <button className="mt-4 py-3 px-5 bg-transparent border-2 rounded border-white text-gray-50 text-sm hover:bg-white hover:text-green-900 hover:font-semibold">
           Register Now
         </button>
       </div>
