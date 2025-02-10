@@ -9,7 +9,7 @@ const App = () => {
     <div className="font-Poppins bg-Solitude">
       <Router>
         <Routes>
-          <Route path='/' element={<Navbar/>}/>
+          <Route path='/' element={<LandingSection/>}/>
           <Route path='/landing' element={<LandingSection/>}/>
           <Route path='/draft' element={<Draft/>}/>
         </Routes>
