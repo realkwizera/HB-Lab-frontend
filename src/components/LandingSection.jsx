@@ -32,17 +32,17 @@ const LandingSection = () => {
           className={`bg-gray-50 flex mt-0 lg:py-0 py-3 items-center ${
             isScrolled
               ? "bg-white text-green-900 shadow-md "
-              : "text-white inset-0 bg-gradient-to-l from-green-900 to-transparent"
+              : "lg:text-white lg:inset-0 lg:bg-gradient-to-l lg:from-green-900 lg:to-transparent"
           }`}
         >
-          <nav className=" flex  lg:justify-between items-center grid lg:grid-cols-3 py-3  lg:ml-30 ml-3 px-5  gap-3 w-full">
+          <nav className=" flex  lg:justify-between items-center grid lg:grid-cols-3 py-3 gap-3  lg:ml-30 ml-3 px-5  w-full">
             <div className="flex justify-between items-center w-full lg:w-auto lg:col-span-1 col-span-3">
               <div id="logo" className="">
-                <img src={logo} alt="Logo" className="w-45 hidden lg:block" />{" "}
+                <img src={logo} alt="Logo" className="w-45 hidden lg:block" />
                 <img
                   src={logoicon}
                   alt="Logo"
-                  className="w-25 inline lg:hidden"
+                  className="w-15 block lg:hidden"
                 />
               </div>
               <div className="toggler">
@@ -56,14 +56,14 @@ const LandingSection = () => {
             </div>
 
             <div
-              className={`col-span-2 flex flex-col lg:flex-row lg:ml-0 ml-5 items-start lg:items-center gap-5 ${
+              className={`col-span-2 flex flex-col lg:flex-row items-start lg:items-center gap-5 ${
                 isToggleOpen ? "" : "hidden"
               } lg:flex`}
             >
               <div
                 id="nav-links"
                 className={`flex flex-col lg:flex-row items-start lg:items-center lg:gap-10 gap-3 text-green-900 font-small ${
-                  isScrolled ? "text-green-900" : "text-white"
+                  isScrolled ? "text-green-900" : "lg:text-white text-green-900"
                 } `}
               >
                 <p className="underline text-underline-offset-4">Home</p>
