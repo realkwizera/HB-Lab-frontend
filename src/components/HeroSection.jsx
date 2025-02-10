@@ -15,7 +15,7 @@ const HeroSection = () => {
         <label className="lg:font-black font-black text-white lg:text-5xl text-2xl">
           Empowering the Next Generation of Tech Professionals!
         </label>
-        <p className="flex text-start text-white mt-2 lg:w-3/4 break-words text-2xl">
+        <p className="flex text-start text-white mt-2 lg:w-3/4 break-words text-xl">
           Gain hands-on experience in Software Development, Multimedia,
           Networking, and Computer Systems with HBLab Ltd.
         </p>

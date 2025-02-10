@@ -35,7 +35,7 @@ const LandingSection = () => {
               : "lg:text-white lg:inset-0 lg:bg-gradient-to-l lg:from-green-900 lg:to-transparent"
           }`}
         >
-          <nav className=" flex  lg:justify-between items-center grid lg:grid-cols-3 py-3 gap-3  lg:ml-30 ml-3 px-5  w-full">
+          <nav className=" flex  lg:justify-between items-center grid lg:grid-cols-3 lg:py-3 gap-3  lg:ml-30 ml-3 px-5  w-full">
             <div className="flex justify-between items-center w-full lg:w-auto lg:col-span-1 col-span-3">
               <div id="logo" className="">
                 <img src={logo} alt="Logo" className="w-45 hidden lg:block" />
