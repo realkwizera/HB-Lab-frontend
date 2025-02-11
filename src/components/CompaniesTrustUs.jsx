@@ -9,11 +9,12 @@ import klab from "../assets/c-klab.png";
 const CompaniesTrustUs = () => {
   return (
     <>
-      <div className="flex justify-center items-center w-full text-green-900">
-        <label className="font-bold text-4xl p-4">
-          Companies we worked with
-        </label>
-      </div>
+      <div className="flex flex-col items-center justify-center mx-auto w-full text-green-900">
+        <div className="flex justify-center items-center w-full text-green-900">
+          <label className="font-bold text-4xl p-4">
+            Companies we worked with
+          </label>
+        </div>
         <div className="flex justify-center items-center lg:flex-row flex-col gap-6 w-80 max-w-6xl text-center">
           <div className="flex flex-row justify-center items-center">
             <div className="flex flex-col items-center">
@@ -56,7 +57,7 @@ const CompaniesTrustUs = () => {
             </div>
           </div>
         </div>
-    
+      </div>
     </>
   );
 };
