@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import LandingSection from './components/LandingSection'
+import ContainerPage from './components/ContainerPage'
 import Draft from './components/Footer'
 
 const App = () => {
@@ -9,8 +9,8 @@ const App = () => {
     <div className="font-Poppins bg-Solitude text-sm">
       <Router>
         <Routes>
-          <Route path='/' element={<LandingSection/>}/>
-          <Route path='/landing' element={<LandingSection/>}/>
+          <Route path='/' element={<ContainerPage/>}/>
+          <Route path='/landing' element={<ContainerPage/>}/>
           <Route path='/draft' element={<Draft/>}/>
         </Routes>
       </Router>

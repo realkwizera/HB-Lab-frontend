@@ -9,11 +9,11 @@ const Courses = () => {
     <div>
       <div className="flex items-center justify-center mx-auto w-full text-green-900">
         <div className="flex flex-col items-center gap-5 max-w-screen-xl mx-auto px-5">
-          <div>
+          <div className="my-3">
             <label className="font-bold text-4xl p-4">Courses</label>
           </div>
 
-          <div className="grid lg:grid-cols-5 mx-auto grid-cols-2 gap-10">
+          <div className="grid lg:grid-cols-4 mx-auto grid-cols-2 gap-10">
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center ">
                 <img src={software} alt="" />
