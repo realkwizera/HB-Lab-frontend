@@ -94,7 +94,7 @@ const LandingSection = () => {
 
       <section
         id="our-services"
-        className="grid min-h-screen place-items-center w-full px-5 my-5"
+        className="grid place-items-center w-full px-5 my-5"
       >
         <CompaniesTrustUs />
       </section>
