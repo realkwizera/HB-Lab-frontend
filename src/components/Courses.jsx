@@ -3,6 +3,11 @@ import computer from "../assets/computer.png"
 import csystems from "../assets/computer-sys.png"
 import multimedia from "../assets/multimedia.png"
 import software from "../assets/sw-dev.png"
+import { AiOutlineDesktop } from "react-icons/ai";
+import { RiComputerLine } from "react-icons/ri";
+import { FaNetworkWired } from "react-icons/fa";
+import { FaPhotoVideo } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 const Courses = () => {
   return (
@@ -16,7 +21,7 @@ const Courses = () => {
           <div className="grid lg:grid-cols-4 mx-auto grid-cols-2 gap-10">
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center ">
-                <img src={software} alt="" />
+                <FaCode className="w-full h-full object-fit p-2"/>
               </div>
               <p className="text-black text-lg font-semibold">
                 Software Development
@@ -29,7 +34,7 @@ const Courses = () => {
             </div>
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center">
-              <img src={multimedia} alt="" />
+              <FaPhotoVideo  className="w-full h-full object-fit p-2" />
               </div>
               <p className="text-black text-lg font-semibold">Multimedia</p>
               <p className="text-black text-sm font-sm flex flex-col">
@@ -40,7 +45,7 @@ const Courses = () => {
             </div>
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center">
-              <img src={computer} alt="" />
+              <FaNetworkWired className="w-full h-full object-fit p-2" />
               </div>
               <p className="text-black text-lg font-semibold">Networking</p>
               <p className="text-black text-sm font-sm flex flex-col">
@@ -51,7 +56,7 @@ const Courses = () => {
             </div>
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center">
-              <img src={csystems} alt="" />
+              <RiComputerLine className="w-full h-full object-fit p-2" />
               </div>
               <p className="text-black text-lg font-semibold">
                 Computer Systems{" "}

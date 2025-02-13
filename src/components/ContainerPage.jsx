@@ -7,6 +7,7 @@ import AboutUs from "./AboutUs";
 import Courses from "./Courses";
 import ContactUs from "./ContactUs";
 import CompaniesTrustUs from "./CompaniesTrustUs";
+import LeadershipTeam from "./LeadershipTeam";
 
 const ContainerPage = () => {
   return (
@@ -51,6 +52,12 @@ const ContainerPage = () => {
       </div> */}
       <section id="contact-us" className="mx-auto place-items-center w-full px-5 my-5">
         <ContactUs />
+      </section>
+      {/* <div className="flex justify-center text-green-900">
+        <hr className="w-8/10 text-green-900" />
+      </div> */}
+      <section id="our-leadership" className="mx-auto place-items-center w-full px-5 my-5">
+        <LeadershipTeam />
       </section>
       {/* <div className="flex justify-center text-green-900">
         <hr className="w-8/10 text-green-900" />
