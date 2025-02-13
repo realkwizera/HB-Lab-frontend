@@ -8,17 +8,17 @@ function Footer() {
   return (
     <>
       <div className="flex justify-center items-center w-full px-4 mx-auto">
-        <div className="flex lg:flex-row flex-col items-center justify-center my-auto w-full h-fit p-4 gap-4 mx-auto">
+        <div className="flex md:flex-row flex-col my-auto w-full h-fit p-4 gap-4 mx-auto">
           {/* cols*/}
           <div className="flex mx-auto m-2">
-            <div className="flex flex-col my-auto px-2 gap-4">
+            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
               <div>
                 <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
               </div>
               <div>
                 <h1 className="font-black text-medium">People</h1>
               </div>
-              <div className="text-black w-2/3">
+              <div className="text-black lg:w-2/3 w-full">
                 You'll receive support from our expert, in-house teams to match
                 you to your ideal role and provide career guidance.
               </div>
@@ -28,14 +28,14 @@ function Footer() {
           <div className="w-[1px] h-35 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
           {/* cols*/}
           <div className="flex mx-auto m-2">
-            <div className="flex flex-col my-auto px-2 gap-4">
+            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
               <div>
                 <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
               </div>
               <div>
                 <h1 className="font-black text-medium">Technology</h1>
               </div>
-              <div className="text-black w-2/3">
+              <div className="text-black lg:w-2/3 w-full">
                 Access HB-LAB e-learning to apply for roles, get verified in
                 your chosen skills, and connect with a global community.
               </div>
@@ -44,15 +44,15 @@ function Footer() {
           {/* cols */}
           <div className="w-[1px] h-35 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
-            <div className="flex flex-col my-auto px-2 gap-4">
+          <div className="flex m-2">
+            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
               <div>
                 <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
               </div>
               <div>
                 <h1 className="font-black text-medium">Training</h1>
               </div>
-              <div className="text-black w-2/3">
+              <div className="text-black lg:w-2/3 w-full">
                 Stay engaged and advance your career with cutting edge
                 upskilling opportunities from our partners.
               </div>

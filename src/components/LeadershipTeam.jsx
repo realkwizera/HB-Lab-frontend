@@ -14,8 +14,8 @@ const LeadershipTeam = () => {
   return (
     <div className="flex items-center justify-center mx-auto w-full text-green-900 lg:my-20 my-10">
       <div className="flex flex-col justify-center items-center mx-auto">
-      <h1 className="lg:text-3xl text-2xl lg:font-bold font-black mb-8 lg:w-full text-center">Meet Our Leadership Team</h1>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-12 max-w-4xl">
+      <h1 className="lg:text-3xl text-2xl md:font-bold font-black mb-8 lg:w-full text-center">Meet Our Leadership Team</h1>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-12 max-w-4xl">
         {teamMembers.map((member, index) => (
           <div
             key={index}

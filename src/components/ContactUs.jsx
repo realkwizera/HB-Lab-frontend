@@ -8,7 +8,7 @@ const ContactUs = () => {
           <label className="font-bold text-4xl p-4">Contact Us</label>
         </div>
 
-        <div className="grid lg:grid-cols-2 mx-auto grid-cols-1 flex justify-between mx-auto items-center my-3 w-full">
+        <div className="grid md:grid-cols-2 mx-auto grid-cols-1 flex justify-between mx-auto items-center my-3 w-full">
           <div className="flex flex-col mx-auto rounded-lg lg:w-1/2 w-full  items-end">
             <textarea
               className="lg:w-120 w-full h-54 lg:h-64 p-3 bg-blue-200 rounded-lg resize-none outline-none focus:ring-2 focus:ring-green-900"

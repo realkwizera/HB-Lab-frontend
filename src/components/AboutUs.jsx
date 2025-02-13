@@ -8,8 +8,8 @@ const AboutUs = () => {
   return (
     <div className="flex font-Poppins items-center justify-center mx-auto w-full text-green-900">
       <div className="flex flex-col gap-5 max-w-screen-xl mx-auto px-5">
-        <div>
-          <label className="font-black text-4xl p-4 mx-auto">
+        <div className="p-4 text-start">
+          <label className="font-black text-4xl  ">
             Invest in your career growth
           </label>
         </div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 my-auto w-full h-fit p-4">
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Training</h1></div>
@@ -50,7 +50,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Events</h1></div>
@@ -58,7 +58,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Mentorship</h1></div>
@@ -66,7 +66,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Perks</h1></div>
@@ -74,7 +74,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Wellness</h1></div>
@@ -82,7 +82,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* cols*/}
-          <div className="flex mx-auto m-2">
+          <div className="flex md:mx-0 mx-auto m-2">
             <div className="w-[1px] h-24 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
             <div className="flex flex-col my-auto px-2">
               <div><h1 className="font-bold text-xl">Meet-ups</h1></div>

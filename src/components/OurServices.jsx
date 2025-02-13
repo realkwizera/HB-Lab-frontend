@@ -9,8 +9,8 @@ const OurServices = () => {
                   <label className="font-bold text-4xl p-4">Our Services</label>
                 </div>
     
-                <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-10 gap-3">
-                  <div className="flex flex-col bg-blue-200 px-5 py-5 mx-auto lg:py-10 rounded-lg h-full lg:w-80 text-center">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-3">
+                  <div className="flex flex-col bg-blue-200 px-5 py-5 mx-auto lg:py-10 rounded-lg h-full w-full md:w-80 text-center">
                     <div className="flex justify-center">
                       <FaCode size={50} />
                     </div>
@@ -26,7 +26,7 @@ const OurServices = () => {
                     </ul>
                   </div>
     
-                  <div className="flex flex-col bg-blue-200 px-5 py-5 mx-auto lg:py-10 rounded-lg h-full lg:w-80  text-center">
+                  <div className="flex flex-col bg-blue-200 px-5 py-5 mx-auto lg:py-10 rounded-lg h-full w-full md:w-80  text-center">
                     <div className="flex justify-center">
                       <FaLaptop size={50} />
                     </div>
@@ -38,7 +38,7 @@ const OurServices = () => {
                     </ul>
                   </div>
     
-                  <div className="flex flex-col bg-blue-200 px-5 py-5  mx-auto lg:py-10 rounded-lg h-full lg:w-80 text-center">
+                  <div className="flex flex-col bg-blue-200 px-5 py-5  mx-auto lg:py-10 rounded-lg h-full w-full md:w-80 text-center">
                     <div className="flex justify-center">
                       <FaCog size={50} />
                     </div>

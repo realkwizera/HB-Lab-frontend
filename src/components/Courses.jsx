@@ -18,7 +18,7 @@ const Courses = () => {
             <label className="font-bold text-4xl p-4">Courses</label>
           </div>
 
-          <div className="grid lg:grid-cols-4 mx-auto grid-cols-2 gap-10">
+          <div className="grid lg:grid-cols-4 mx-auto md:grid-cols-3 grid-cols-2 gap-10">
             <div className="mx-auto">
               <div className="lg:w-50 lg:h-50 w-40 lg:h-50 h-40 bg-blue-200 flex items-center justify-center ">
                 <FaCode className="w-full h-full object-fit p-2"/>
