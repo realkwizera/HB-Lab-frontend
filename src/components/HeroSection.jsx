@@ -11,7 +11,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-green-900 to-transparent opacity-100"></div>
 
-      <div className="absolute lg:top-2/5 top-1/3 left-10 p-5 rounded-lg max-w-screen-lg mx-auto">
+      <div className="absolute lg:top-2/5 top-1/3 left-10 p-5 gap-4 rounded-lg max-w-screen-lg mx-auto">
         <label className="lg:font-black font-black text-white lg:text-5xl text-2xl">
           Empowering the Next Generation of Tech Professionals!
         </label>
