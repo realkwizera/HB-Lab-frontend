@@ -1,70 +1,17 @@
 import React from "react";
 import Logo from "../assets/logo-white.png";
 import { Icon } from "@iconify/react";
-import { FaTruck, FaHeadset, FaShieldAlt } from "react-icons/fa";
-import stat from "../assets/stat.png";
+
 
 function Footer() {
   return (
     <>
-      <div className="flex justify-center items-center w-full px-4 mx-auto">
-        <div className="flex md:flex-row flex-col my-auto w-full h-fit p-4 gap-4 mx-auto">
-          {/* cols*/}
-          <div className="flex mx-auto m-2">
-            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
-              <div>
-                <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
-              </div>
-              <div>
-                <h1 className="font-black text-medium">People</h1>
-              </div>
-              <div className="text-black lg:w-2/3 w-full">
-                You'll receive support from our expert, in-house teams to match
-                you to your ideal role and provide career guidance.
-              </div>
-            </div>
-          </div>
-          {/* cols */}
-          <div className="w-[1px] h-35 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
-          {/* cols*/}
-          <div className="flex mx-auto m-2">
-            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
-              <div>
-                <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
-              </div>
-              <div>
-                <h1 className="font-black text-medium">Technology</h1>
-              </div>
-              <div className="text-black lg:w-2/3 w-full">
-                Access HB-LAB e-learning to apply for roles, get verified in
-                your chosen skills, and connect with a global community.
-              </div>
-            </div>
-          </div>
-          {/* cols */}
-          <div className="w-[1px] h-35 bg-gradient-to-b from-black to-transparent lg:inline hidden"></div>
-          {/* cols*/}
-          <div className="flex m-2">
-            <div className="flex flex-col my-auto px-2 lg:gap-4 gap-2">
-              <div>
-                <img src={stat} alt="HB-Lab Stats" className="w-10 h-10" />
-              </div>
-              <div>
-                <h1 className="font-black text-medium">Training</h1>
-              </div>
-              <div className="text-black lg:w-2/3 w-full">
-                Stay engaged and advance your career with cutting edge
-                upskilling opportunities from our partners.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="bg-green-900 w-full flex justify-center">
         <div className="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-20 text-white w-full max-w-6xl">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <img src={Logo} alt="Logo" className="lg:w-full w-75 mb-4  p-2" />
+            <img src={Logo} alt="Logo" className="lg:w-full w-32 mb-4  p-2" />
           </div>
 
           {/* Support */}
@@ -92,10 +39,10 @@ function Footer() {
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <p className="text-lg font-semibold mb-4">Get in touch with us !</p>
             <div className="flex justify-center lg:justify-start space-x-3">
-              <Icon icon="proicons:instagram" width="24" height="24" />
-              <Icon icon="line-md:twitter-x-alt" width="24" height="24" />
-              <Icon icon="ri:linkedin-fill" width="24" height="24" />
-              <Icon icon="ic:sharp-tiktok" width="24" height="24" />
+              <a href="https://www.instagram.com/hblabrw"><Icon icon="proicons:instagram" width="24" height="24" /></a>
+              <a href="https://x.com/HabaruremaJules"><Icon icon="line-md:twitter-x-alt" width="24" height="24" /></a>
+              <a href="https://www.linkedin.com/company/hb-lab/ "><Icon icon="ri:linkedin-fill" width="24" height="24" /></a>
+              <a href="https://www.tiktok.com/@hblabrw"><Icon icon="ic:sharp-tiktok" width="24" height="24" /></a>
             </div>
           </div>
         </div>

@@ -1,64 +1,58 @@
-import React from "react";
-import aipi from "../assets/c-aipi.png";
-import andela from "../assets/c-andela.png";
-import bict from "../assets/c-bict.png";
-import ict from "../assets/c-ict.png";
-import itek from "../assets/c-itek.png";
-import klab from "../assets/c-klab.png";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import aipi from "../assets/bambe.png";
+import andela from "../assets/COOPEDHU.png";
+import bict from "../assets/CRAT.png";
+import ict from "../assets/NBHS.png";
+import itek from "../assets/umuhuza.png";
+import klab from "../assets/emmaus.png";
+
+const logos = [aipi, andela, bict, ict, itek, klab];
 
 const CompaniesTrustUs = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <>
-      <div className="flex flex-col items-center justify-center mx-auto w-full text-green-900">
-        <div className="flex justify-center items-center w-full text-green-900">
-          <label className="font-bold text-4xl p-4">
-            Companies we worked with
-          </label>
-        </div>
-        <div className="flex justify-center items-center lg:flex-row flex-col gap-6 w-80 max-w-6xl text-center">
-          <div className="flex flex-row justify-center items-center">
-            <div className="flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={aipi} alt="AIPI" className="w-full" />
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={andela} alt="ANDELA" className="w-full" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row justify-center items-center">
-            <div className="mb-10 flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={bict} alt="BICT" className="w-full" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={ict} alt="ICT" className="w-full" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-row justify-center items-center">
-            <div className="flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={itek} alt="ITEK" className="w-full" />
-              </div>
-            </div>
-
-            <div className="mb-10 flex flex-col items-center">
-              <div className="p-4 rounded-full w-50">
-                <img src={klab} alt="KLAB" className="w-full" />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="flex flex-col items-center justify-center mx-auto w-full text-green-900 overflow-hidden py-10">
+      {/* Title */}
+      <div className="flex justify-center items-center w-full">
+        <h1 className="lg:text-3xl text-2xl md:font-bold font-black mb-8 lg:w-full text-center">
+          Brands we work with
+        </h1>
       </div>
-    </>
+
+      {/* Moving Logos */}
+      <div 
+        className="relative w-full max-w-6xl overflow-hidden"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <motion.div
+          className="flex w-max space-x-10"
+          animate={{ x: isHovered ? "0%" : ["0%", "-100%"] }} // Pause on hover
+          transition={{
+            repeat: Infinity,
+            duration: 20, // Adjust speed
+            ease: "linear",
+          }}
+        >
+          {/* Duplicate logos for smooth looping */}
+          {[...logos, ...logos].map((logo, index) => (
+            <div
+              key={index}
+              className="w-32 h-20 flex items-center justify-center"
+            >
+              <motion.img
+                src={logo}
+                alt="Company Logo"
+                className="lg:w-full lg:h-full w-20 h-20 object-contain filter grayscale hover:filter-none transition duration-300"
+                whileHover={{ filter: "grayscale(0%)" }} // Show original color on hover
+              />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
   );
 };
 

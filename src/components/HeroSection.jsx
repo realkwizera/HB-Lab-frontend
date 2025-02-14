@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
-import banner from "../assets/handsonPC.webp";
+import banner from "../assets/bg3.jpg";
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex text-start text-white mt-2 lg:w-3/4 break-words font-bold lg:text-xl text-sm lg:mt-10"
         >
-          Gain hands-on experience in Software Development, Multimedia, Networking, and Computer Systems with HBLab Ltd.
+          Gain hands-on experience in Software Development, Multimedia, Networking, and Computer Systems with HBLab.
         </motion.p>
         <motion.button
           initial={{ opacity: 0, scale: 0.8 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-4 py-3 px-5 bg-transparent border-2 rounded border-white text-gray-50 text-sm hover:bg-white hover:text-green-900 hover:font-semibold"
         >
-          Register Now
+          Get Started Now &rarr;
         </motion.button>
 
         {/* Statistics Section with Count Animation */}
